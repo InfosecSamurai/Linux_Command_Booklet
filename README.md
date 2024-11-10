@@ -44,9 +44,9 @@ At the heart of **The Ultimate Linux Command Guide** is a vibrant community, and
 To install the Ultimate Linux Command Guide, follow these steps:
 
 ```bash
-git clone https://github.com/infosecsamurai/Ultimate-Linux-Command-Guide.git
+git clone https://github.com/infosecsamurai/linux-command-guide.git
 
-cd Ultimate-Linux-Command-Guide
+cd linux-command-guide
 ```
 ---
 
