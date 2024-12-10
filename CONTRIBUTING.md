@@ -64,6 +64,6 @@ To contribute, please follow these steps:
 - [Issue Tracker](link-to-issues)
 
 ---
-
+```
 *Happy Contributing!*
 ```
