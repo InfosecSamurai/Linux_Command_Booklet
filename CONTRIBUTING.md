@@ -1,4 +1,4 @@
-```markdown ```
+
 # Contributing to The Linux Command Booklet
 
 Thank you for your interest in contributing to The Linux Command Booklet! We welcome contributions from everyone. To ensure a smooth experience for all contributors, please follow the guidelines below.
