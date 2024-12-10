@@ -32,8 +32,8 @@ To contribute, please follow these steps:
 1. **Fork the Repository**: Click the "Fork" button at the top right of the repository page.
 2. **Clone Your Fork**:
    ```bash
-   git clone https://github.com/InfosecSamurai/your-repository.git
-   cd your-repository
+   git clone https://github.com/InfosecSamurai/Linux_Command_Booklet.git
+   cd Linux_Command_Booklet
    ```
 3. **Create a Branch**: Create a new branch for your changes.
    ```bash
