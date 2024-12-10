@@ -1,16 +1,16 @@
-<img src="https://github.com/user-attachments/assets/c9087689-52ac-4422-9b4c-e69fc7f16d2d" alt="Banner" style="width: 100%; max-width: 800px; height: 450px;">
+![Banner](https://i.imgur.com/Lpt11nX.png)
 
-# The Ultimate Linux Command Guide
+# The Ultimate Linux Command Booklet
 
 ## Introduction
 
-Welcome to **The Ultimate Linux Command Guide**! Whether you’re a seasoned developer, a cybersecurity enthusiast, or someone simply eager to dive deeper into the world of Linux, you’ve come to the right place. Think of this guide as your friendly companion on your journey to mastering the command line. It’s packed with everything you need to take your Linux skills to the next level. From beginners looking for their first commands to experts wanting to streamline their workflows, this repository is here to support you every step of the way. 
+Welcome to **The Ultimate Linux Command Booklet**! Whether you’re a seasoned developer, a cybersecurity enthusiast, or someone simply eager to dive deeper into the world of Linux, you’ve come to the right place. Think of this guide as your friendly companion on your journey to mastering the command line. It’s packed with everything you need to take your Linux skills to the next level. From beginners looking for their first commands to experts wanting to streamline their workflows, this repository is here to support you every step of the way. 
 
 Get ready to explore the powerful capabilities of the command line and discover tips, tricks, and shortcuts that make working in Linux not only efficient but also enjoyable!
 
 ## Purpose 🎯
 
-The purpose of **The Ultimate Linux Command Guide** goes beyond just listing commands; it's about empowering you to take charge of your environment with confidence! We understand that sometimes Linux can seem overwhelming, especially with its vast array of commands and options. That's why we've designed this guide to simplify complex tasks and break them down into manageable, bite-sized pieces. 
+The purpose of **The Ultimate Linux Command Booklet** goes beyond just listing commands; it's about empowering you to take charge of your environment with confidence! We understand that sometimes Linux can seem overwhelming, especially with its vast array of commands and options. That's why we've designed this guide to simplify complex tasks and break them down into manageable, bite-sized pieces. 
 
 Our goal is to streamline your workflows, making it easier for you to accomplish your objectives without the usual headaches. Each command is presented with clear explanations, practical examples, and handy tips to ensure you can integrate them into your daily routine effortlessly. 
 
@@ -26,7 +26,7 @@ Dive into our **Extensive Command Reference**, your go-to resource for mastering
 Say goodbye to tedious and repetitive tasks with our **Interactive Tools**! We offer a suite of scripts designed to automate those mundane processes that eat up your time and energy. Whether it's backups, system monitoring, or application deployment, our scripts will help you work smarter, not harder. Join the fun of automating your workflow and reclaim your time for the exciting projects you really care about!
 
 ### Community Contribution
-At the heart of **The Ultimate Linux Command Guide** is a vibrant community, and we want *you* to be a part of it! Our **Community Contribution** feature encourages collaboration and shared learning. Feel free to add your insights, tips, and favorite commands to enhance our repository. Together, we can build a well-rounded resource that serves the needs of every Linux user out there. So roll up your sleeves, contribute, and let’s grow this guide together!
+At the heart of **The Ultimate Linux Command Booklet** is a vibrant community, and we want *you* to be a part of it! Our **Community Contribution** feature encourages collaboration and shared learning. Feel free to add your insights, tips, and favorite commands to enhance our repository. Together, we can build a well-rounded resource that serves the needs of every Linux user out there. So roll up your sleeves, contribute, and let’s grow this guide together!
 
 ---
 
@@ -41,12 +41,12 @@ At the heart of **The Ultimate Linux Command Guide** is a vibrant community, and
 - [Contact Us 📫](#contact-us-📫)
 
 ## Installation Instructions 💻
-To install the Ultimate Linux Command Guide, follow these steps:
+To install The Ultimate Linux Command Booklet, follow these steps:
 
 ```bash
-git clone https://github.com/infosecsamurai/linux-command-guide.git
+git clone https://github.com/InfosecSamurai/Linux_Command_Booklet.git
 
-cd linux-command-guide
+cd Linux_Command_Booklet
 ```
 ---
 
@@ -63,5 +63,5 @@ We wholeheartedly welcome your contributions! Please read our Contributing Guide
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
 ## Contact Us 📫
- - GitHub <a href="https://github.com/InfosecSamurai" style="color: blue;">InfosecSamurai</a>
- - Twitter <a href="https://twitter.com/InfosecSamurai" style="color: blue;">InfosecSamurai</a>
+ - GitHub <a href="https://github.com/InfosecSamurai" style="color: blue;">Contact Us</a>
+ - Twitter <a href="https://twitter.com/InfosecSamurai" style="color: blue;">Contact Us</a>
