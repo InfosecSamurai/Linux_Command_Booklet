@@ -1,6 +1,6 @@
 ![Banner](https://i.imgur.com/Lpt11nX.png)
 
-[The Ultimate Linux Command Booklet](https://github.com/InfosecSamurai/Linux_Command_Booklet/blob/main/index.html)
+[The Ultimate Linux Command Booklet](https://infosecsamurai.github.io/TheUltimateLinuxCommandBooklet.git.io/)
 
 ## Introduction
 
