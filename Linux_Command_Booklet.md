@@ -601,5 +601,4 @@ This booklet provides a comprehensive overview of essential and advanced Linux c
 ---
 
 ## Conclusion
-
 This extended cheat sheet aims to provide an exhaustive reference for Linux commands. If you're looking for more advanced usage, always refer to the man pages (e.g., `man command_name`) for details on options and capabilities.
