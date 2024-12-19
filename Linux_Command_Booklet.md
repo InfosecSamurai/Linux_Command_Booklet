@@ -1,4 +1,4 @@
-# The Linux Command Booklet
+# The Ultimate Linux Command Booklet
 
 This booklet provides a comprehensive overview of essential and advanced Linux commands, structured for easy reference.
 
