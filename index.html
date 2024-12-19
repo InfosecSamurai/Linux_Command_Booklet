@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Command Booklet</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #2e2e2e;
+            color: #ffffff;
+        }
+
+        header {
+            background-color: #1e1e1e;
+            color: #f1c40f;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: #f1c40f;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #575757;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        h2 {
+            color: #f1c40f;
+            border-bottom: 2px solid #f1c40f;
+            padding-bottom: 5px;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background-color: #1e1e1e;
+            border-radius: 5px;
+            padding: 20px;
+        }
+
+        code {
+            background-color: #4c4c4c;
+            padding: 2px 4px;
+            border-radius: 4px;
+            color: #f1c40f;
+        }
+
+        pre {
+            background-color: #4c4c4c;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+            color: #f1c40f;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1e1e1e;
+            color: #f1c40f;
+        }
+
+        /* Collapsible sections */
+        .collapsible {
+            background-color: #333;
+            color: #f1c40f;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: background-color 0.3s;
+        }
+
+        .active, .collapsible:hover {
+            background-color: #575757;
+        }
+
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #2e2e2e;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>The Linux Command Booklet</h1>
+        <p>Your comprehensive guide to essential and advanced Linux commands.</p>
+    </header>
+
+    <nav>
+        <a href="#file-operations">File Operations</a>
+        <a href="#directory-operations">Directory Operations</a>
+        <a href="#system-info">System Information</a>
+        <a href="#file-permissions">File Permissions</a>
+        <a href="#searching">Searching</a>
+        <a href="#process-management">Process Management</a>
+        <a href="#networking">Networking Commands</a>
+        <a href="#package-management">Package Management</a>
+        <a href="#user-management">User Management</a>
+        <a href="#system-monitoring">System Monitoring</a>
+        <a href="#text-processing">Text Processing</a>
+        <a href="#archiving">Archiving</a>
+        <a href="#shutdown">System Shutdown</a>
+        <a href="#custom-commands">Custom Commands</a>
+    </nav>
+
+    <div class="container">
+        <section id="file-operations">
+            <h2>File Operations</h2>
+            <button class="collapsible">Creating Files</button>
+            <div class="content">
+                <p><code>touch filename.txt</code> - Create an empty file.</p>
+                <p><code>echo "Hello, World!" > filename.txt</code> - Create a file with content.</p>
+                <p><code>nano filename.txt</code> or <code>vim filename.txt</code> - Create and edit files in the terminal.</p>
+            </div>
+            <button class="collapsible">Displaying Files</button>
+            <div class="content">
+                <p><code>cat filename.txt</code> - Display the content of a file.</p>
+                <p><code>less filename.txt</code> - View content one page at a time.</p>
+                <p><code>more filename.txt</code> - View content one screen at a time.</p>
+                <p><code>head filename.txt</code> - Display the first ten lines of a file.</p>
+                <p><code>tail filename.txt</code> - Display the last ten lines of a file.</p>
+            </div>
+            <button class="collapsible">File Comparison</button>
+            <div class="content">
+                <p><code>diff file1.txt file2.txt</code> - Compare two files line by line.</p>
+                <p><code>meld file1.txt file2.txt</code> - A visual diff tool (requires installation).</p>
+            </div>
+            <button class="collapsible">Creating Symbolic Links</button>
+            <div class="content">
+                <p><code>ln -s target_file link_name</code> - Create a symbolic link.</p>
+            </div>
+            <button class="collapsible">Finding Duplicate Files</button>
+            <div class="content">
+                <p><code>fdupes -r /path/to/directory</code> - Find and delete duplicate files.</p>
+            </div>
+        </section>
+
+        <section id="directory-operations">
+            <h2>Directory Operations</h2>
+            <button class="collapsible">Creating Directories</button>
+            <div class="content">
+                <p><code>mkdir new_directory</code> - Create a new directory.</p>
+            </div>
+            <button class="collapsible">Displaying Directories</button>
+            <div class="content">
+                <p><code>ls -l</code> - List directory contents.</p>
+                <p><code>tree /path/to/directory</code> - Display directory structure (requires installation).</p>
+            </div>
+            <button class="collapsible">Navigating Directories</button>
+            <div class="content">
+                <p><code>cd /path/to/directory</code> - Change directory.</p>
+            </div>
+            <button class="collapsible">Removing Directories</button>
+            <div class="content">
+                <p><code>rmdir directory_name</code> - Remove an empty directory.</p>
+                <p><code>rm -r directory_name</code> - Remove a directory and its contents.</p>
+                <p><code>chmod -R 755 directory_name</code> - Change permissions recursively.</p>
+                <p><code>chown -R user:group directory_name</code> - Change ownership recursively.</p>
+            </div>
+        </section>
+
+        <section id="system-info">
+            <h2>Viewing System Information</h2>
+            <button class="collapsible">System Information</button>
+            <div class="content">
+                <p><code>uname -a</code> - Display system information.</p>
+                <p><code>sudo lshw</code> - Display detailed hardware information.</p>
+                <p><code>lscpu</code> - Display CPU architecture information.</p>
+            </div>
+            <button class="collapsible">System Load and Usage</button>
+            <div class="content">
+                <p><code>top</code> - Display active processes.</p>
+                <p><code>htop</code> - Interactive process viewer (requires installation).</p>
+                <p><code>vmstat 5</code> - Report virtual memory statistics.</p>
+            </div>
+            <button class="collapsible">Memory and Disk Usage</button>
+            <div class="content">
+                <p><code>free -h</code> - Show memory usage.</p>
+                <p><code>df -h</code> - Display disk space usage.</p>
+            </div>
+        </section>
+
+        <section id="file-permissions">
+            <h2>File Permissions</h2>
+            <button class="collapsible">Changing Permissions and Ownership</button>
+            <div class="content">
+                <p><code>chmod 755 filename</code> - Change file permissions.</p>
+                <p><code>chown user:group filename</code> - Change file owner and group.</p>
+            </div>
+            <button class="collapsible">Understanding Permissions</button>
+            <div class="content">
+                <p><code>ls -l filename</code> - View permissions of files.</p>
+                <p><code>umask 022</code> - Set default file permissions for new files.</p>
+            </div>
+        </section>
+
+        <section id="searching">
+            <h2>Searching for Files and Text</h2>
+            <button class="collapsible">Finding Files</button>
+            <div class="content">
+                <p><code>find /path -name "filename"</code> - Search for files in a directory hierarchy.</p>
+                <p><code>locate filename</code> - Find files by name (requires updatedb).</p>
+            </div>
+            <button class="collapsible">Searching for Text</button>
+            <div class="content">
+                <p><code>grep "search_term" filename</code> - Search for text within files.</p>
+                <p><code>grep -E "regex_pattern" filename</code> - Use regex to search text.</p>
+            </div>
+        </section>
+
+        <section id="process-management">
+            <h2>Process Management</h2>
+            <button class="collapsible">Managing Processes</button>
+            <div class="content">
+                <p><code>ps aux</code> - Display running processes.</p>
+                <p><code>kill PID</code> - Terminate a process.</p>
+                <p><code>killall process_name</code> - Kill processes by name.</p>
+            </div>
+            <button class="collapsible">Managing Background Processes</button>
+            <div class="content">
+                <p><code>jobs</code> - List active jobs in the current shell.</p>
+                <p><code>fg %1</code> - Bring a job to the foreground.</p>
+                <p><code>bg %1</code> - Run a job in the background.</p>
+            </div>
+        </section>
+
+        <section id="networking">
+            <h2>Networking Commands</h2>
+            <button class="collapsible">Networking Basics</button>
+            <div class="content">
+                <p><code>ping example.com</code> - Check connectivity to a host.</p>
+                <p><code>ifconfig</code> - Display network configuration.</p>
+                <p><code>ip addr show</code> - Show IP addresses.</p>
+            </div>
+            <button class="collapsible">Network Connections</button>
+            <div class="content">
+                <p><code>netstat -tuln</code> - Display network connections.</p>
+                <p><code>traceroute example.com</code> - Trace route to a host.</p>
+            </div>
+            <button class="collapsible">Downloading Files</button>
+            <div class="content">
+                <p><code>curl -O http://example.com/file.txt</code> - Download files via curl.</p>
+                <p><code>wget http://example.com/file.txt</code> - Download files via wget.</p>
+            </div>
+        </section>
+
+        <section id="package-management">
+            <h2>Package Management Commands</h2>
+            <button class="collapsible">Debian/Ubuntu</button>
+            <div class="content">
+                <p><code>sudo apt-get install package_name</code> - Install a package.</p>
+                <p><code>apt-cache search package_name</code> - Search for packages.</p>
+            </div>
+            <button class="collapsible">RedHat/CentOS</button>
+            <div class="content">
+                <p><code>sudo yum install package_name</code> - Install a package.</p>
+                <p><code>sudo dnf install package_name</code> - Next-gen package manager.</p>
+            </div>
+        </section>
+
+        <section id="user-management">
+            <h2>User Management</h2>
+            <button class="collapsible">Adding and Managing Users</button>
+            <div class="content">
+                <p><code>sudo adduser username</code> - Add a new user.</p>
+                <p><code>sudo usermod -aG groupname username</code> - Modify a user account.</p>
+            </div>
+            <button class="collapsible">Changing User Passwords</button>
+            <div class="content">
+                <p><code>sudo passwd username</code> - Change a user's password.</p>
+            </div>
+            <button class="collapsible">Displaying User Information</button>
+            <div class="content">
+                <p><code>whoami</code> - Display the current user.</p>
+            </div>
+        </section>
+
+        <section id="system-monitoring">
+            <h2>System Monitoring Tools</h2>
+            <button class="collapsible">Monitoring System Resources</button>
+            <div class="content">
+                <p><code>glances</code> - Cross-platform system monitoring tool.</p>
+            </div>
+            <button class="collapsible">Log Monitoring</button>
+            <div class="content">
+                <p><code>tail -f /var/log/syslog</code> - Monitor logs in real-time.</p>
+            </div>
+        </section>
+
+        <section id="text-processing">
+            <h2>Text Processing Commands</h2>
+            <button class="collapsible">Text Manipulation</button>
+            <div class="content">
+                <p><code>cut -d ':' -f 1 /etc/passwd</code> - Remove sections from files.</p>
+                <p><code>sort file.txt</code> - Sort lines of text files.</p>
+                <p><code>uniq -c sorted_file.txt</code> - Report repeated lines.</p>
+                <p><code>awk '{print $1}' file.txt</code> - Powerful pattern scanning language.</p>
+            </div>
+        </section>
+
+        <section id="archiving">
+            <h2>Archiving and Compression</h2>
+            <button class="collapsible">Creating Archives</button>
+            <div class="content">
+                <p><code>tar -cvf archive.tar /path/to/directory/</code> - Archive files.</p>
+                <p><code>zip -r archive.zip directory_name</code> - Zip files and directories.</p>
+            </div>
+            <button class="collapsible">Extracting Archives</button>
+            <div class="content">
+                <p><code>tar -xvf archive.tar</code> - Extract tar files.</p>
+                <p><code>unzip archive.zip</code> - Extract zip files.</p>
+            </div>
+        </section>
+
+        <section id="shutdown">
+            <h2>System Shutdown and Restart</h2>
+            <p><code>sudo shutdown -h now</code> - Shut down the system.</p>
+            <p><code>sudo reboot</code> - Restart the system.</p>
+            <p><code>sudo halt</code> - Stop the system without powering off.</p>
+        </section>
+
+        <section id="custom-commands">
+            <h2>Custom Commands</h2>
+            <button class="collapsible">Combining Commands</button>
+            <div class="content">
+                <p><code>cd /path/to/directory; ls -l; echo "Done"</code> - Run multiple commands in sequence.</p>
+                <p><code>ps aux | grep bash | awk '{print $2}'</code> - Combine commands for filtering output.</p>
+                <p><code>mkdir new_dir && cd new_dir</code> - Only run the next command if the previous one succeeds.</p>
+                <p><code>result=$(ls)</code><br><code>echo "Files: $result"</code> - Execute commands in a subshell to capture output.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Linux Command Booklet. All rights reserved.</p>
+        <p>Contact: <a href="mailto:yourname@example.com" style="color: #f1c40f;">yourname@example.com</a></p>
+    </footer>
+
+    <script>
+        const coll = document.getElementsByClassName("collapsible");
+        for (let i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                const content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
