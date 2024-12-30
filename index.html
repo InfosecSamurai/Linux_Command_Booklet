@@ -86,7 +86,6 @@
             color: #f1c40f;
         }
 
-        /* Collapsible sections */
         .collapsible {
             background-color: #333;
             color: #f1c40f;
@@ -198,6 +197,11 @@
                 <p><code>uname -a</code> - Display system information.</p>
                 <p><code>sudo lshw</code> - Display detailed hardware information.</p>
                 <p><code>lscpu</code> - Display CPU architecture information.</p>
+                <p><code>hostname</code> - Show or set the system's host name.</p>
+                <p><code>uname -r</code> - Display the kernel version.</p>
+                <p><code>uptime</code> - Show how long the system has been running.</p>
+                <p><code>dmesg</code> - Print kernel ring buffer messages.</p>
+                <p><code>lsmod</code> - Show the status of modules in the Linux kernel.</p>
             </div>
             <button class="collapsible">System Load and Usage</button>
             <div class="content">
@@ -247,6 +251,9 @@
                 <p><code>ps aux</code> - Display running processes.</p>
                 <p><code>kill PID</code> - Terminate a process.</p>
                 <p><code>killall process_name</code> - Kill processes by name.</p>
+                <p><code>nice</code> - Run a command with modified scheduling priority.</p>
+                <p><code>renice</code> - Alter the priority of running processes.</p>
+                <p><code>pstree</code> - Display a tree of processes.</p>
             </div>
             <button class="collapsible">Managing Background Processes</button>
             <div class="content">
@@ -268,6 +275,11 @@
             <div class="content">
                 <p><code>netstat -tuln</code> - Display network connections.</p>
                 <p><code>traceroute example.com</code> - Trace route to a host.</p>
+                <p><code>route</code> - Show/manipulate the IP routing table.</p>
+                <p><code>hostnamectl</code> - Control the system hostname and related settings.</p>
+                <p><code>mtr</code> - Combines ping and traceroute functionality.</p>
+                <p><code>iperf</code> - Measure maximum TCP and UDP bandwidth performance.</p>
+                <p><code>wget --mirror</code> - Download an entire website.</p>
             </div>
             <button class="collapsible">Downloading Files</button>
             <div class="content">
@@ -282,6 +294,7 @@
             <div class="content">
                 <p><code>sudo apt-get install package_name</code> - Install a package.</p>
                 <p><code>apt-cache search package_name</code> - Search for packages.</p>
+                <p><code>snap</code> - Package management system for installing and managing snaps.</p>
             </div>
             <button class="collapsible">RedHat/CentOS</button>
             <div class="content">
@@ -304,6 +317,9 @@
             <button class="collapsible">Displaying User Information</button>
             <div class="content">
                 <p><code>whoami</code> - Display the current user.</p>
+                <p><code>finger</code> - Display information about users on the system.</p>
+                <p><code>chage</code> - Change user password expiry information.</p>
+                <p><code>vipw</code> - Safely edit the password file.</p>
             </div>
         </section>
 
@@ -312,10 +328,16 @@
             <button class="collapsible">Monitoring System Resources</button>
             <div class="content">
                 <p><code>glances</code> - Cross-platform system monitoring tool.</p>
+                <p><code>htop</code> - Interactive process viewer.</p>
+                <p><code>iotop</code> - Display I/O usage by processes.</p>
+                <p><code>pidstat</code> - Report statistics by process.</p>
             </div>
             <button class="collapsible">Log Monitoring</button>
             <div class="content">
                 <p><code>tail -f /var/log/syslog</code> - Monitor logs in real-time.</p>
+                <p><code>tcpdump</code> - Dump traffic on a network.</p>
+                <p><code>nmap</code> - Network exploration tool and security/port scanner.</p>
+                <p><code>socat</code> - Multipurpose relay (socket cat).</p>
             </div>
         </section>
 
@@ -327,6 +349,9 @@
                 <p><code>sort file.txt</code> - Sort lines of text files.</p>
                 <p><code>uniq -c sorted_file.txt</code> - Report repeated lines.</p>
                 <p><code>awk '{print $1}' file.txt</code> - Powerful pattern scanning language.</p>
+                <p><code>fmt</code> - Simple text formatter.</p>
+                <p><code>paste</code> - Merge lines of files.</p>
+                <p><code>pr</code> - Convert text files for printing.</p>
             </div>
         </section>
 
@@ -346,26 +371,30 @@
 
         <section id="shutdown">
             <h2>System Shutdown and Restart</h2>
-            <p><code>sudo shutdown -h now</code> - Shut down the system.</p>
+            <p><code>sudo shutdown -h now</code> - Shut down the system immediately.</p>
             <p><code>sudo reboot</code> - Restart the system.</p>
-            <p><code>sudo halt</code> - Stop the system without powering off.</p>
+            <p><code>sudo poweroff</code> - Power off the system.</p>
+            <p><code>sudo shutdown -r +10</code> - Restart the system in 10 minutes.</p>
         </section>
 
         <section id="custom-commands">
             <h2>Custom Commands</h2>
-            <button class="collapsible">Combining Commands</button>
+            <button class="collapsible">Creating Aliases</button>
             <div class="content">
-                <p><code>cd /path/to/directory; ls -l; echo "Done"</code> - Run multiple commands in sequence.</p>
-                <p><code>ps aux | grep bash | awk '{print $2}'</code> - Combine commands for filtering output.</p>
-                <p><code>mkdir new_dir && cd new_dir</code> - Only run the next command if the previous one succeeds.</p>
-                <p><code>result=$(ls)</code><br><code>echo "Files: $result"</code> - Execute commands in a subshell to capture output.</p>
+                <p><code>alias ll='ls -la'</code> - Create an alias for a command.</p>
+                <p><code>unalias ll</code> - Remove an alias.</p>
+            </div>
+            <button class="collapsible">Creating Shell Scripts</button>
+            <div class="content">
+                <p><code>nano myscript.sh</code> - Create a new shell script.</p>
+                <p>Make it executable with <code>chmod +x myscript.sh</code>.</p>
+                <p>Run the script with <code>./myscript.sh</code>.</p>
             </div>
         </section>
     </div>
 
     <footer>
         <p>&copy; 2024 The Ultimate Linux Command Booklet. All rights reserved.</p>
-        <p>Contact: <a href="mailto:Infosecsamurai@onmail.com" style="color: #f1c40f;">Infosecsamurai@onmail.com</a></p>
     </footer>
 
     <script>
